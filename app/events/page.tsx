@@ -38,15 +38,14 @@ const EventsPage: React.FC = () => {
   return (<>
  
       {/* Header Section with SVG Illustration */}
-    < section className=" px-4 bg-primary-100  md:flex  md:flex-row items-center justify-center md:min-h-[520px] min-h-[480px]"> 
-    <div className="absolute md:top-52 md:-left-32 top-72 -left-40 md:w-48 md:h-48  rounded-full bg-primary-175  md:opacity-60 opacity-80"></div>
+    < section className=" px-4 bg-primary-100  md:flex  md:flex-row items-center justify-center md:h-screen min-h-[480px]"> 
+    <div className="absolute md:top-98 md:-left-32 top-72 -left-40 md:w-48 md:h-48  rounded-full bg-primary-175  md:opacity-60 opacity-0"></div>
       <div className="absolute md:top-120 md:right-14  top-96 -right-16 md:w-32 md:h-32 rounded-full bg-primary-200 md:opacity-60 opacity-0"></div>
       <div className="absolute md:top-52 md:right-120 top-40 right-8 md:w-16 md:h-16 rounded-full bg-primary-175 md:opacity-70 opacity-0 overflow-hidden"></div>
         <div className=" text-center mb-8 pt-8 md:-pt-16">
           <h2 className="text-3xl md:text-5xl text-primary-950 font-bold mb-4 mt-2">UPCOMING EVENTS</h2>
           <p className="text-lg text-gray-700 ">
-            Connect, learn, and grow with our diverse range of events designed for students, 
-            alumni, and faculty members.
+          Connect and grow with our diverse range of events designed for students, alumni, and faculty members
           </p>
         </div>
         <div className="md:w-1/2 mt-12 md:mt-2 flex justify-center">

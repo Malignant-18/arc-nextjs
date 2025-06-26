@@ -20,8 +20,8 @@ interface TeamMember {
 }
 
 const Coordinator: TeamMember = {
-  name: 'Dr.Minsfdsdi',
-  role: 'sfgsdfgsfdgsdfgsf',
+  name: 'Dr.Minimol B',
+  role: 'Faculty in-charge',
   image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
   email: 'rahul.s2023@mec.ac.in',
   linkedin: '#',
@@ -29,36 +29,71 @@ const Coordinator: TeamMember = {
 
 const studentCoordinators: TeamMember[] = [
   {
-    name: 'Rahul Sharma',
-    role: 'Student Coordinator',
+    name: 'Angel Elsa George',
+    role: 'Chairperson',
     image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg',
     email: 'rahul.s2023@mec.ac.in',
     linkedin: '#',
   },
   {
-    name: 'Aiswwha Khan',
-    role: 'Student Coordinator',
+    name: 'Johann Manuel',
+    role: 'Vice-Chairperson',
     image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg',
     email: 'aisha.k2024@mec.ac.in',
     linkedin: '#',
   },
   {
-    name: 'Vignesh Menon',
-    role: 'Technical Coordinator',
+    name: 'Krishna Anand',
+    role: 'Alumni Connect Head',
     image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg',
     email: 'vignesh.m2023@mec.ac.in',
     linkedin: '#',
   },
   {
-    name: 'Meera Suresh',
-    role: 'Creative Coordinator',
+    name: 'Darsana Rajeev',
+    role: 'Database Head',
+    image: '/teampics/darsana_rajeev.jpg',
+    email: 'meera.s2024@mec.ac.in',
+    linkedin: '#',
+  },
+  {
+    name: 'Nevin Joseph',
+    role: 'Event Lead',
+    image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg',
+    email: 'aisha.k2024@mec.ac.in',
+    linkedin: '#',
+  },
+  {
+    name: 'Joe George',
+    role: 'Tech Lead',
+    image: '/teampics/joe_george2.jpg',
+    email: 'rahul.s2023@mec.ac.in',
+    linkedin: '#',
+  },
+  {
+    name: 'Deva      Sambhu',
+    role: 'Publicity Lead',
+    image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg',
+    email: 'aisha.k2024@mec.ac.in',
+    linkedin: '#',
+  },
+  {
+    name: 'Gouri      Mukesh',
+    role: 'Finance Lead',
+    image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg',
+    email: 'vignesh.m2023@mec.ac.in',
+    linkedin: '#',
+  },
+  {
+    name: 'Mariya Alexander',
+    role: 'Design Lead',
     image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg',
     email: 'meera.s2024@mec.ac.in',
     linkedin: '#',
   },
   {
-    name: 'Jenssna Khan',
-    role: 'Student Coordinator',
+    name: 'George Thomas',
+    role:  'Design Co-Lead',
     image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg',
     email: 'aisha.k2024@mec.ac.in',
     linkedin: '#',
@@ -78,15 +113,15 @@ const TeamMemberCard: React.FC<{ member: TeamMember; index: number }> = ({ membe
           <Image 
             src={member.image}
             alt={member.name}
-            width={200}
+            width={250}
             height={200}
             
             className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>
-        <div className="p-6">
-          <h3 className="text-xl font-semibold mb-1 text-center">{member.name}</h3>
-          <p className="text-primary-600 font-medium mb-3 text-center">{member.role}</p>
+        <div className="p-6 py-2 md:py-6">
+          <h3 className="text-[18px] font-semibold mb-1 text-center">{member.name}</h3>
+          <p className="text-primary-600 font-medium text-[14px] md:mb-4 mb-2 text-center">{member.role}</p>
           <div className="flex justify-center gap-12">
               <a href={member.linkedin} className="p-2 text-gray-600 hover:text-primary-600 transition-colors">
                 <Linkedin size={18} />
@@ -107,9 +142,9 @@ const TeamPage: React.FC = () => {
       <Section 
         title="OUR TEAM"
         subtitle="Meet the dedicated individuals who work behind the scenes to strengthen our alumni community."
-        className="bg-primary-50 text-primary-800 pt-12"
+        className="bg-primary-50 text-primary-800 pt-26"
       >
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6 md:mx-12 md:gap-18 mx-6">
           {studentCoordinators.map((member, index) => (
             <TeamMemberCard key={index} member={member} index={index} />
           ))}
@@ -127,13 +162,13 @@ const TeamPage: React.FC = () => {
               <Image 
                 src={Coordinator.image}
                 alt={Coordinator.name}
-                width={200}
+                width={250}
                 height={200}
 
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
-            <div className="p-6">
+            <div className="p-6 pb-2 md:pb-6">
               <h3 className="text-xl font-semibold mb-1 text-center">{Coordinator.name}</h3>
               <p className="text-primary-600 font-medium mb-3 text-center">{Coordinator.role}</p>
               <div className="flex justify-center gap-12">

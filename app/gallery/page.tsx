@@ -44,7 +44,7 @@ const GalleryPage: React.FC = () => {
 
   return (
     <motion.div
-      className="py-12 px-4 max-w-7xl mx-auto bg-gray-100 min-h-screen"
+      className="py-12 max-w-7xl mx-auto mb-0 bg-primary-50 pt-40 min-h-screen"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4 }}
@@ -108,7 +108,7 @@ const GalleryPage: React.FC = () => {
         </>
       ) : (
         <motion.div
-          className="text-center py-20 text-gray-600 max-w-3xl mx-auto"
+          className="text-center py-10 text-gray-600 max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -117,10 +117,10 @@ const GalleryPage: React.FC = () => {
             src="/assets/undraw_portfolio_update.svg"
             alt="Gallery Coming Soon"
             width={52}
-            height={300}
+            height={500}
             className="w-52 md:w-full max-w-md mx-auto mb-12"
           />
-          <p className="text-md">
+          <p className="text-md px-4">
             Stay tuned.<br />This space will soon feature a growing display of our most meaningful moments.
           </p>
         </motion.div>

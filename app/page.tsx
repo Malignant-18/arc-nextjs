@@ -32,7 +32,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
           >
-          Alumni Relations Cell <br/><span className="text-primary-150">MEC</span>
+          ALUMNI RELATIONS CELL <br/><span className="text-primary-150">MEC</span>
           </motion.h1>
           <motion.p
             className="text-xl mb-8 max-w-2xl mx-auto"

@@ -39,8 +39,8 @@ const ContactPage: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl text-primary-800 md:pt-12 pt-10 md:text-4xl font-bold mb-4">CONTACT US</h1>
-          <p className="text-lg text-gray-600 pt-4">
+          <h1 className="text-4xl text-primary-800 md:pt-18 pt-16 md:text-4xl font-bold mb-4">CONTACT US</h1>
+          <p className="text-lg text-gray-600 pt-4 px-8">
             Were just getting started and would love to hear from you — whether its questions, feedback, or ideas.
           </p>
         </motion.div>
@@ -83,7 +83,7 @@ const ContactPage: React.FC = () => {
                 </div>
               </div>
               
-              <div className="md:h-100 md:w-[1px] md:bg-gray-400"></div>
+              <div className="md:h-80 md:w-[1px] md:bg-gray-400"></div>
               
               {/* Social Media */}
               <div className="bg-gray-100 rounded-xl text-center justify-center w-full max-w-sm space-y-6 transition p-4">

@@ -57,7 +57,7 @@ const Header: React.FC = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <Image 
-                  src="/handshake-logo.png" 
+                  src="/teampics/logo-full.jpg" 
                   alt="Alumni Relations Cell Logo"
                   width={40}
                   height={40}

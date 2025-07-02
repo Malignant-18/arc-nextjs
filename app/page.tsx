@@ -19,20 +19,19 @@ export default function HomePage() {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage:
-              "url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg')",
+            backgroundImage: "url('/common/mec_background.jpeg')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 to-primary-800/80" />
-        <div className="container mx-auto px-4 relative z-10 text-center text-white">
+        <div className="container mx-auto px-4 pt-20 relative z-10 text-center text-white">
           <motion.h1
             className="text-5xl lg:text-6xl font-bold mb-4"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
           >
-          ALUMNI RELATIONS CELL <br/><span className="text-primary-150">MEC</span>
+          Alumni Relations Cell <br/><span className="text-primary-150">MEC</span>
           </motion.h1>
           <motion.p
             className="text-xl mb-8 max-w-2xl mx-auto"

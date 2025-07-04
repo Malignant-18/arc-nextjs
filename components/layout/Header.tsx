@@ -65,11 +65,14 @@ const Header: React.FC = () => {
                 />
               </motion.div>
               <div className="group-hover:translate-x-1 transition-transform duration-300">
-                <h1 className="text-lg font-bold leading-none text-gray-800 group-hover:text-primary-700 transition-colors duration-300">
+                <h1 className="text-lg font-bold leading-none text-gray-800 group-hover:text-primary-700 transition-colors duration-300 px-2 md:px-4">
                   ALUMNI RELATIONS CELL
                 </h1>
-                <p className="text-xs text-gray-600 leading-tight group-hover:text-primary-600 transition-colors duration-300">
-                  MEC
+                <p className="ml-2  text-xs text-gray-600 leading-tight group-hover:text-primary-600 transition-colors duration-300 block md:hidden">
+                    MEC
+                </p>
+                <p className="text-xs text-gray-600 leading-tight mt-1 ml-4 group-hover:text-primary-600 transition-colors duration-300 hidden md:block">
+                    Model Engineering College, Thrikkakara
                 </p>
               </div>
             </Link>
@@ -112,7 +115,7 @@ const Header: React.FC = () => {
             {/* Mobile menu button */}
             <motion.button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-400/50"
+              className="md:hidden p-2  md:pt-4 rounded-lg bg-gray-100 hover:bg-gray-200 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-400/50"
               aria-label="Toggle menu"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

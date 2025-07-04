@@ -26,77 +26,76 @@ const Coordinator: TeamMember = {
   email: 'rahul.s2023@mec.ac.in',
   linkedin: '#',
 }
-
 const studentCoordinators: TeamMember[] = [
   {
     name: 'Angel Elsa George',
     role: 'Chairperson',
-    image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg',
-    email: 'aaaaa.k2024@mec.ac.in',
-    linkedin: '#',
+    image: '/teampics/angel_elsa_george1.jpg',
+    email: 'angelgeorge704@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/angel-george-36816b256',
   },
   {
     name: 'Johann Manuel',
     role: 'Vice-Chairperson',
-    image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg',
-    email: 'aaaaa.k2024@mec.ac.in',
-    linkedin: '#',
+    image: '/teampics/johann_manuel.jpg',
+    email: 'johannmanuel321@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/johann-manuel-2882a3255',
   },
   {
     name: 'Krishna Anand',
     role: 'Alumni Connect Head',
     image: '/teampics/krishna_anand.jpg',
-    email: 'aaaaa.k2024@mec.ac.in',
-    linkedin: '#',
+    email: 'drkrishnaanand@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/krishna-anand-616622302',
   },
   {
     name: 'Darsana Rajeev',
     role: 'Database Head',
     image: '/teampics/darsana_rajeev.jpg',
-    email: 'aaaaa.k2024@mec.ac.in',
-    linkedin: '#',
+    email: 'darsanarajeev8486@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/darsana-rajeev-4741b4255',
   },
   {
     name: 'Nevin Joseph',
     role: 'Event Lead',
     image: '/teampics/nevin_joseph.png',
-    email: 'aaaaa.k2024@mec.ac.in',
-    linkedin: '#',
+    email: 'nevinj981@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/nevin-joseph-antony',
   },
   {
     name: 'Joe George',
     role: 'Tech Lead',
     image: '/teampics/joe_george2.jpg',
-    email: 'aaaaa.k2024@mec.ac.in',
-    linkedin: '#',
+    email: 'joegeorge215@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/joe-george-348111291',
   },
   {
-    name: 'Deva      Sambhu',
+    name: 'Deva Sambhu',
     role: 'Publicity Lead',
-    image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg',
-    email: 'aaaaa.k2024@mec.ac.in',
-    linkedin: '#',
+    image: '/teampics/deva_sambhu_p1.png',
+    email: 'devasambhuprasannakumar@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/deva-sambhu-p-55a231291',
   },
   {
-    name: 'Gouri      Mukesh',
+    name: 'Gouri Mukesh',
     role: 'Finance Lead',
-    image: '/teampics/gouri_mukesh.heif',
-    email: 'aaaaa.k2024@mec.ac.in',
-    linkedin: '#',
+    image: '/teampics/gouri_mukesh.jpg',
+    email: 'gourimchandra@gmail.com',
+    linkedin: 'http://linkedin.com/in/gouri-mukesh-980720292',
   },
   {
     name: 'Mariya Alexander',
     role: 'Design Lead',
-    image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg',
-    email: 'aaaaa.k2024@mec.ac.in',
-    linkedin: '#',
+    image: '/teampics/mariya_alexander1.jpg',
+    email: 'mariyaad.d2012@gmail.com',
+    linkedin: '',
   },
   {
     name: 'George Thomas',
-    role:  'Design Co-Lead',
-    image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg',
-    email: 'aaaaa.k2024@mec.ac.in',
-    linkedin: '#',
+    role: 'Design Co-Lead',
+    image: '/teampics/george_thomas.png',
+    email: 'georgethomas@ieee.org',
+    linkedin: 'https://www.linkedin.com/in/george--thomas-',
   },
 ];
 
@@ -123,12 +122,21 @@ const TeamMemberCard: React.FC<{ member: TeamMember; index: number }> = ({ membe
           <h3 className="text-[18px] font-semibold mb-1 text-center">{member.name}</h3>
           <p className="text-primary-600 font-medium text-[14px] md:mb-4 mb-2 text-center">{member.role}</p>
           <div className="flex justify-center gap-12">
-              <a href={member.linkedin} className="p-2 text-gray-600 hover:text-primary-600 transition-colors">
-                <Linkedin size={18} />
-              </a>
-              <a href={`mailto:${member.email}`} className="p-2 text-gray-600 hover:text-primary-600 transition-colors">
-                <Mail size={18} />
-              </a>
+          <a
+    href={member.linkedin}
+    className="p-2 text-gray-600 hover:text-primary-600 transition-colors"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Linkedin size={18} />
+  </a>
+  <a
+    href={`mailto:${member.email}`}
+    className="p-2 text-gray-600 hover:text-primary-600 transition-colors"
+    target="_blank"
+    rel="noopener noreferrer"
+  >  <Mail size={18} />
+  </a>
           </div>
         </div>
       </Card>

@@ -64,7 +64,7 @@ export default function HomePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            The Alumni Relations Cell at Model Engineering College is more than just a student initiative—it is a commitment to fostering lifelong connections. Initiated in collaboration with faculty mentors, the cell aims to build a vibrant and engaged alumni network that contributes actively to the institution's ongoing growth. Through meaningful programs and purposeful interactions, we aspire to bridge generations of MECians and create a lasting impact on careers, innovation, and community.
+            The Alumni Relations Cell at Model Engineering College is more than just a student initiative—it is a commitment to fostering lifelong connections. Initiated in collaboration with faculty mentors, the cell aims to build a vibrant and engaged alumni network that contributes actively to the institution&apos;s ongoing growth. Through meaningful programs and purposeful interactions, we aspire to bridge generations of MECians and create a lasting impact on careers, innovation, and community.
           </motion.p>
         </div>
       </Section>

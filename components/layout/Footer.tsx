@@ -18,11 +18,11 @@ const Footer: React.FC = () => {
           {/* 1. Cell Name & Logo */}
           <div className="flex items-start px-12 md:px-8 gap-3">
           <Image
-            src="/teampics/logo-full.jpg"
+            src="/common/logo_arc.png"
             alt="Alumni Relations Cell Logo"
             width={50}
             height={50}
-            className="w-12 h-12 rounded-full object-cover ring-2 ring-primary"
+            className="w-12 h-12 rounded-full object-cover bg-primary-50 ring-2 ring-primary"
             />
             <h3 className="text-lg font-bold text-white leading-snug">
               ALUMNI<br /> RELATIONS <br />CELL

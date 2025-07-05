@@ -64,7 +64,7 @@ export default function HomePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            The Alumni Relations Cell at Model Engineering College is more than just a student initiative—it is a commitment to fostering lifelong connections. Initiated in collaboration with faculty mentors, the cell aims to build a vibrant and engaged alumni network that contributes actively to the institution s ongoing growth. Through meaningful programs and purposeful interactions, we aspire to bridge generations of MECians and create a lasting impact on careers, innovation, and community.
+            The Alumni Relations Cell at Model Engineering College is more than just a student initiative—it is a commitment to fostering lifelong connections. Initiated in collaboration with faculty mentors, the cell aims to build a vibrant and engaged alumni network that contributes actively to the institution's ongoing growth. Through meaningful programs and purposeful interactions, we aspire to bridge generations of MECians and create a lasting impact on careers, innovation, and community.
           </motion.p>
         </div>
       </Section>
@@ -115,8 +115,8 @@ export default function HomePage() {
               className="w-32 md:w-48 order-1 md:order-none" 
             />
             <div className="text-left md:ml-8">
-              <h3 className="text-xl font-semibold mb-2">Cell Formation</h3>
-              <p className="text-gray-600">In this stage, the initial thoughts and motivations behind starting an alumni cell were discussed and laid out.</p>
+              <h3 className="text-xl font-semibold mb-2">Formation</h3>
+              <p className="text-gray-600">The journey began with thoughtful discussions and a shared vision — to establish a dedicated alumni cell that would foster lasting connections between alumni and the student community</p>
             </div>
           </div>
 
@@ -130,8 +130,8 @@ export default function HomePage() {
               className="w-32 md:w-48 order-1 md:order-none md:-mt-8" 
             />
             <div className="text-left md:mr-8">
-              <h3 className="text-xl font-semibold mb-2">Inaugural Launch</h3>
-              <p className="text-gray-600">With the core team and support from faculty, the MEC Alumni Cell was officially launched with an inauguration event.</p>
+              <h3 className="text-xl font-semibold mb-2">Launch</h3>
+              <p className="text-gray-600">With support from our core team and faculty, the MEC Alumni Cell was officially launched through a memorable inauguration event</p>
             </div>
           </div>
 
@@ -146,7 +146,7 @@ export default function HomePage() {
             />
             <div className="text-left md:ml-8">
               <h3 className="text-xl font-semibold mb-2">Talks and Events</h3>
-              <p className="text-gray-600">Through continuous seminars, alumni talks, and student interaction programs, the cell grew rapidly in influence and impact.</p>
+              <p className="text-gray-600">From alumni talks to interactive sessions and seminars, we’ve been growing steadily — bringing the MEC community closer, one event at a time</p>
             </div>
           </div>
 
@@ -181,10 +181,10 @@ export default function HomePage() {
             >
               <h3 className="text-3xl font-semibold mb-4">Official Launch</h3>
               <div className="flex items-center text-gray-600 mb-2">
-                <Calendar className="mr-2" size={20} /> May 25, 2025
+                <Calendar className="mr-2" size={20} /> July 11, 2025
               </div>
               <div className="flex items-center text-gray-600 mb-4">
-                <Globe className="mr-2" size={20} /> MEC Main Auditorium
+                <Globe className="mr-2" size={20} />Internal Auditorium MEC
               </div>
               <p className="text-gray-700 mb-6">
                 Join us for our inaugural gathering—an evening of introductions, vision sharing, and networking with faculty, students, and alumni.

@@ -30,7 +30,7 @@ const studentCoordinators: TeamMember[] = [
   {
     name: 'Angel Elsa George',
     role: 'Chairperson',
-    image: '/teampics/angel_elsa_george1.jpg',
+    image: '/teampics/angel_elsa_george.jpg',
     email: 'angelgeorge704@gmail.com',
     linkedin: 'https://www.linkedin.com/in/angel-george-36816b256',
   },

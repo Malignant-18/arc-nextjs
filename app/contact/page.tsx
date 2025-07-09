@@ -20,14 +20,34 @@ const ContactPage: React.FC = () => {
     const { name, value } = e.target;
     setFormState(prev => ({ ...prev, [name]: value }));
   };
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formState);
+  
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbxD-xfzqhqx_FzC6H1SekitH28ZrheSE2ATmovt78QxXQFE-kPSmD1KyVJLJCbWTQUBJQ/exec', {
+        method: 'POST',
+        redirect: 'follow', // 🔑 Important
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8', // 🔑 Important
+        },
+        body: JSON.stringify(formState),
+      });
+  
+      const result = await response.json();
+      console.log('Success:', result);
+    }  
+    catch (error: unknown) {
+      if (error instanceof Error) {
+        console.error('Error in Google Script:', error.message);
+      } else {
+        console.error('An unknown error occurred:', error);
+      }
+    }
     setFormSubmitted(true);
     setFormState({ name: '', email: '', subject: '', message: '' });
     setTimeout(() => setFormSubmitted(false), 10000);
   };
+ 
 
   return (
     <>
@@ -68,8 +88,8 @@ const ContactPage: React.FC = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-primary-900 mb-1">Email</h3>
                   <p className="text-gray-700 text-sm">
-                    <a href="mailto:alumni@mec.ac.in" className="text-secondary-600 hover:underline">
-                      alumni@mec.ac.in
+                    <a href="mailto:arc@mec.ac.in" className="text-secondary-600 hover:underline">
+                      arc@mec.ac.in
                     </a>
                   </p>
                 </div>
@@ -91,21 +111,20 @@ const ContactPage: React.FC = () => {
 
                 {/* LinkedIn */}
                 <a
-                  href="https://linkedin.com/company/dummy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 hover:bg-gray-50 px-4 py-3 justify-center rounded transition"
+                  className="flex items-center gap-4 hover:bg-gray-50 px-4 py-3 pr-12 justify-center rounded transition"
                 >
                   <Linkedin className="text-secondary-600" size={30} />
                   <div className="flex flex-col items-start min-w-0">
                     <h4 className="text-md font-semibold text-gray-800">LinkedIn</h4>
-                    <p className="text-gray-700 text-sm truncate w-full">alumnirelatio</p>
+                    <p className="text-gray-700 text-sm truncate w-full">Coming Soon</p>
                   </div>
                 </a>
 
                 {/* Instagram */}
                 <a
-                  href="https://instagram.com/dummy"
+                  href="https://instagram.com/alumni_relations.cell"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 hover:bg-gray-50 px-4 py-3 justify-center rounded transition"
@@ -113,7 +132,7 @@ const ContactPage: React.FC = () => {
                   <Instagram className="text-secondary-600" size={30} />
                   <div className="flex flex-col items-start min-w-0">
                     <h4 className="text-md font-semibold text-gray-800">Instagram</h4>
-                    <p className="text-gray-700 text-sm truncate w-full">@mec.alumni</p>
+                    <p className="text-gray-700 text-[12px] truncate w-full">alumni_relations.cell</p>
                   </div>
                 </a>
               </div>

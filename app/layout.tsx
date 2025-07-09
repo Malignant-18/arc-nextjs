@@ -16,15 +16,15 @@ const geistMono = Geist_Mono({
 
 
 export const metadata : Metadata= {
-  title: 'Home',
+  title: 'Alumni Relations Cell MEC',
   description: 'Welcome to the official website of the Alumni Relations Cell at Model Engineering College.',
   openGraph: {
     title: 'Alumni Relations Cell - MEC',
     description: 'Fostering alumni connections, events, and mentorship at MEC.',
-    url: 'https://yourdomain.com',
+    url: 'https://arc-nextjs.vercel.app/',
     images: [
       {
-        url: '/images/home-og.png',
+        url: '/common/logo_arc.png',
         width: 1200,
         height: 630,
         alt: 'Home Preview Image',
@@ -35,7 +35,7 @@ export const metadata : Metadata= {
     card: 'summary_large_image',
     title: 'Alumni Relations Cell - MEC',
     description: 'Fostering alumni connections, events, and mentorship at MEC.',
-    images: ['/images/home-og.png'],
+    images: ['/common/logo_arc.png'],
   },
 };
 

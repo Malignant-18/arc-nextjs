@@ -41,8 +41,8 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={18} className="text-primary-400 flex-shrink-0" />
-                <a href="mailto:alumni@mec.ac.in" className="hover:text-primary-400 transition-colors">
-                  alumni@mec.ac.in
+                <a href="mailto:arc@mec.ac.in" className="hover:text-primary-400 transition-colors">
+                  arc@mec.ac.in
                 </a>
               </div>
             </div>

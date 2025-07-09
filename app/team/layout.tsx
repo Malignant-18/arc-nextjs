@@ -5,7 +5,7 @@ export const metadata = {
     openGraph: {
         title: 'Our Team - Alumni Relations Cell MEC',
         description: 'Meet the dedicated team behind the Alumni Relations Cell of Government Model Engineering College, Thrikkakara.',
-        url: 'https://mec.ac.in/alumni/team',
+        url: 'https://arc-nextjs.vercel.app/',
     },
 };
 

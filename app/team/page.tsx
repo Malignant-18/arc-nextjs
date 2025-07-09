@@ -22,9 +22,9 @@ interface TeamMember {
 const Coordinator: TeamMember = {
   name: 'Dr.Minimol B',
   role: 'Faculty in-charge',
-  image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  email: 'rahul.s2023@mec.ac.in',
-  linkedin: '#',
+  image: '/teampics/minimol.jpeg',
+  email: 'mini@mec.ac.in',
+  linkedin: 'https://www.linkedin.com/in/minimol-balakrishnan-77950346',
 }
 const studentCoordinators: TeamMember[] = [
   {
@@ -88,7 +88,7 @@ const studentCoordinators: TeamMember[] = [
     role: 'Design Lead',
     image: '/teampics/mariya_alexander1.jpg',
     email: 'mariyaad.d2012@gmail.com',
-    linkedin: '',
+    linkedin: 'https://www.linkedin.com/in/mariya-alexander',
   },
   {
     name: 'George Thomas',
@@ -165,7 +165,7 @@ const TeamPage: React.FC = () => {
         className="bg-primary-50 text-primary-800 pt-12"
       >
         <div className="flex justify-center">
-          <Card className="h-120 w-60 overflow-hidden group hover:shadow-md transition-shadow bg-white">
+          <Card className="h-96 w-60 overflow-hidden group hover:shadow-md transition-shadow bg-white">
             <div className="relative aspect-square">
               <Image 
                 src={Coordinator.image}
@@ -176,10 +176,10 @@ const TeamPage: React.FC = () => {
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
-            <div className="p-6 pb-2 md:pb-6">
-              <h3 className="text-xl font-semibold mb-1 text-center">{Coordinator.name}</h3>
-              <p className="text-primary-600 font-medium mb-3 text-center">{Coordinator.role}</p>
-              <div className="flex justify-center gap-12">
+            <div className="p-4 pb-2 pt-2 md:pb-6">
+              <h3 className="text-xl font-semibold pb-1 text-center">{Coordinator.name}</h3>
+              <p className="text-primary-600 font-medium text-center">{Coordinator.role}</p>
+              <div className="flex justify-center gap-12 pt-4">
                 <a href={Coordinator.linkedin} className="p-2 text-gray-600 hover:text-primary-600 transition-colors">
                   <Linkedin size={18} />
                 </a>

@@ -7,6 +7,8 @@ import Section from '../components/common/Section'
 import Button from '../components/common/Button'
 
 
+import Link from 'next/link';
+
 
 export default function HomePage() {
   
@@ -40,11 +42,9 @@ export default function HomePage() {
             A student-led body, guided by our faculty, dedicated to connecting alumni with current students and the college community.
           </motion.p>
           <div className="flex justify-center gap-4">
-  <a
-    href="https://bit.ly/4nA5sZk"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
+
+          <Link href="/launch">
+
     <motion.button
       className="px-6 py-3 rounded-lg bg-primary-300 text-primary-800 font-medium hover:bg-primary-500 transition-colors flex items-center justify-center"
       whileHover={{ scale: 1.03 }}
@@ -53,7 +53,7 @@ export default function HomePage() {
       <span>Official Launch</span>
       <ArrowRight size={16} className="ml-2" />
     </motion.button>
-  </a>
+  </Link>
 </div>
 
         </div>
